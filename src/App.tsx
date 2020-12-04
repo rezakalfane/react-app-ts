@@ -7,6 +7,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import FormControl from "@material-ui/core/FormControl";
+import { TextFieldWithCounter } from './TextFieldWithCounter';
 
 export function App() {
   return (
@@ -17,13 +18,15 @@ export function App() {
         </Typography>
         <FormControl>
           <Grid item>
-            <TextField
+            <TextFieldWithCounter
               margin="dense"
               fullWidth
               id="standard-helperText"
               label="Search terms"
               variant="standard"
               helperText="Some important text"
+              maxLength="30"
+              value="Hello"
             />
           </Grid>
           <Grid item>
