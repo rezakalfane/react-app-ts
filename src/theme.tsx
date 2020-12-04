@@ -13,8 +13,8 @@ export const theme = createMuiTheme({
       MuiInput: {
         styleOverrides: {
           underline: {
-            "&:after": {
-            transition: "none"
+            "&::after": {
+              transition: "none"
             }
           }
         }

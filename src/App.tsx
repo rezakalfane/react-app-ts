@@ -19,6 +19,7 @@ export function App() {
           <Grid item>
             <TextField
               margin="dense"
+              fullWidth
               id="standard-helperText"
               label="Search terms"
               variant="standard"
@@ -28,6 +29,7 @@ export function App() {
           <Grid item>
             <TextField
               margin="dense"
+              fullWidth
               disabled
               id="standard-helperText"
               label="Search terms"
@@ -37,6 +39,7 @@ export function App() {
           </Grid>
           <Grid item>
             <TextField
+              fullWidth
               margin="dense"
               id="standard-helperText"
               label="Search terms"
@@ -46,6 +49,7 @@ export function App() {
           </Grid>
           <Grid item>
             <TextField
+              fullWidth
               margin="dense"
               id="standard-helperText"
               label="Search terms"
