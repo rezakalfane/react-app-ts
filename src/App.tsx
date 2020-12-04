@@ -30,6 +30,18 @@ export function App() {
             <TextField
               margin="dense"
               fullWidth
+              aria-readonly
+              id="standard-helperText"
+              label="Search terms"
+              variant="standard"
+              helperText="Some important text"
+              value="Read Only"
+            />
+          </Grid>
+          <Grid item>
+            <TextField
+              margin="dense"
+              fullWidth
               disabled
               id="standard-helperText"
               label="Search terms"
