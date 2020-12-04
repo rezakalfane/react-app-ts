@@ -1,19 +1,22 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import { Timer } from "./Timer";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
-import FormControl from "@material-ui/core/FormControl";
-import { TextFieldWithCounter } from './TextFieldWithCounter';
+import { Timer } from "./components/Timer";
+import { TextFieldWithCounter } from './components/TextFieldWithCounter';
 
 export function App() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ m: 4 }}>
-        <Typography variant="h4" component="div" gutterBottom>
+        <Typography 
+            variant="h4" 
+            component="div" 
+            gutterBottom>
           Products Spotlight
         </Typography>
         <FormControl>
