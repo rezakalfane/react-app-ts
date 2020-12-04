@@ -6,8 +6,8 @@ import TextField from "@material-ui/core/TextField";
 export function TextFieldWithCounter(props: any) {
   const { maxLength, value, ...otherProps } = props;
 
-  const [textValue, setTextValue] = useState(value);
-  const [count, setCount] = useState(value.length);
+  const [textValue, setTextValue] = useState(value || "");
+  const [count, setCount] = useState(value && value.length || 0);
 
   function handleChange(event: any) {
     setCount(event.target.value.length); 
@@ -28,7 +28,7 @@ export function TextFieldWithCounter(props: any) {
       <Typography 
         align="right" 
         variant="body2"
-        component="div">{count}/{maxLength}</Typography>
+        component="div">{count} / {maxLength}</Typography>
     </Box>
     </React.Fragment>
   );

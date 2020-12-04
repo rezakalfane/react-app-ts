@@ -26,7 +26,18 @@ export function App() {
               variant="standard"
               helperText="Some important text"
               maxLength="30"
-              value="Hello"
+            />
+          </Grid>
+          <Grid item>
+            <TextFieldWithCounter
+              margin="dense"
+              fullWidth
+              id="standard-helperText"
+              label="Search terms"
+              variant="standard"
+              helperText="Some important text"
+              maxLength="50"
+              value="Hello World"
             />
           </Grid>
           <Grid item>
@@ -35,10 +46,10 @@ export function App() {
               fullWidth
               aria-readonly
               id="standard-helperText"
-              label="Search terms"
+              label="Content ID"
               variant="standard"
               helperText="Some important text"
-              value="Read Only"
+              value="f10c660a-fd09-4b88-93e5-49814d50f546"
             />
           </Grid>
           <Grid item>
@@ -59,6 +70,7 @@ export function App() {
               id="standard-helperText"
               label="Search terms"
               variant="filled"
+              value="Very important field"
               helperText="Some important text"
             />
           </Grid>
@@ -69,6 +81,7 @@ export function App() {
               id="standard-helperText"
               label="Search terms"
               variant="outlined"
+              type="search"
               helperText="Some important text"
             />
           </Grid>
