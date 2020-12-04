@@ -18,7 +18,7 @@ export function App() {
         <FormControl>
           <Grid item>
             <TextField
-              margin="normal"
+              margin="dense"
               id="standard-helperText"
               label="Search terms"
               variant="standard"
@@ -37,7 +37,7 @@ export function App() {
           </Grid>
           <Grid item>
             <TextField
-              margin="normal"
+              margin="dense"
               id="standard-helperText"
               label="Search terms"
               variant="filled"
