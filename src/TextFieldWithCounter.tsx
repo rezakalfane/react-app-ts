@@ -7,7 +7,7 @@ export function TextFieldWithCounter(props: any) {
   const { maxLength, value, ...otherProps } = props;
 
   const [textValue, setTextValue] = useState(value || "");
-  const [count, setCount] = useState(value && value.length || 0);
+  const [count, setCount] = useState((value && value.length) || 0);
 
   function handleChange(event: any) {
     setCount(event.target.value.length); 
