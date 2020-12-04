@@ -3,13 +3,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 // A custom theme for this app
 export const theme = createMuiTheme({
     components: {
-      MuiTextField: {
-        styleOverrides: {
-          root: {
-            minWidth: 500
-          }
-        }
-      },
       MuiInput: {
         styleOverrides: {
           underline: {
